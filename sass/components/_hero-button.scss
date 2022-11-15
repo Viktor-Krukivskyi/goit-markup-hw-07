@@ -1,0 +1,8 @@
+.hero__button-main:hover {
+    background: var(--color-inverted);
+    color: var(--color-white);
+}
+
+.hero__button-main:focus {
+    color: var(--color-white);
+}

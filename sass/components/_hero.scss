@@ -1,0 +1,45 @@
+.hero {
+    max-width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    font-family: 'Raleway';
+    background: var(--color-background);
+    letter-spacing: 0.06em;
+    text-align: center;
+    margin: 0 auto;
+    background-image:  linear-gradient(to right,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)),
+    url(../photo/bigfon.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+}
+
+.hero__title {
+    color: var(--color-white);
+    font-family: 'Roboto';
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    margin: 0 auto;
+    width: 696px;
+    text-transform: uppercase;
+}
+
+.hero__button-main {
+    background-color: var(--color-inverted);
+    color: var(--color-white);
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    margin-top: 40px;
+    border-radius: 4px;
+    min-width: 216px;
+    padding: 10px 32px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 250ms var(--color-time);
+}
