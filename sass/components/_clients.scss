@@ -12,14 +12,8 @@
     margin-top: 30px;
 }
 
-
 .clients-team {
     fill: var(--color-icon);
-}
-
-.clients-team:hover {
-    fill: var(--color-inverted);
-    transition: fill 250ms, background 250ms var(--color-time);
 }
 
 .clients-team:focus {
@@ -27,6 +21,10 @@
     transition: fill 250ms, background 250ms var(--color-time);
 }
 
+.clients-team:hover {
+    fill: var(--color-inverted);
+    transition: fill 250ms, background 250ms var(--color-time);
+}
 .clients-link {
     width: 170px;
     height: 92px;
@@ -39,16 +37,21 @@
     transition: fill 250ms, background 250ms var(--color-time);
 }
 
+.clients-link:focus {
+    background-color: var(--color-inverted);
+}
+
 .clients-link:hover {
     border-color: var(--color-inverted);
     transition: fill 250ms, background 250ms var(--color-time);
 }
 
-.clients-link:focus {
-    background-color: var(--color-inverted);
-}
-
 .clients-link:hover .clients-team {
     fill: var(--color-inverted);
+    transition: fill 250ms, background 250ms var(--color-time);
+}
+
+.clients-link:focus .clients-team {
+    fill: var(--color-white);
     transition: fill 250ms, background 250ms var(--color-time);
 }

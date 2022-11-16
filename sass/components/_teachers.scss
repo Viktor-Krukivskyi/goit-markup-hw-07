@@ -23,22 +23,34 @@ ul {
 
 .icon-team {
     fill: var(--color-icon);
+    transition: fill 250ms, background 250ms var(--color-time);
 }
 
+.icon-team:focus {
+    fill: var(--color-white);
+    transition: fill 250ms, background 250ms var(--color-time);
+}
 .icon-team:hover {
     fill: var(--color-white);
+    transition: fill 250ms, background 250ms var(--color-time);
 }
 
 .icon-link:hover {
     background-color: var(--color-inverted);
+    transition: fill 250ms, background 250ms var(--color-time);
 }
 
 .icon-link:hover .icon-team {
     fill: var(--color-white);
+    transition: fill 250ms, background 250ms var(--color-time);
 }
-
+.icon-link:focus .icon-team {
+    fill: var(--color-white);
+    transition: fill 250ms, background 250ms var(--color-time);
+}
 .icon-link:focus {
     background-color: var(--color-inverted);
+    transition: fill 250ms, background 250ms var(--color-time);
 }
 
 

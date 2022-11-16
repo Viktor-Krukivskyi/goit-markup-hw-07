@@ -8,16 +8,14 @@
 
     .header__logo-accent {
         color: var(--color-inverted);
-    }
 
-    .header__logo-accent:hover {
-        color: var(--color-inverted);
+            &:hover,
+            &:focus {
+                color: var(--color-inverted);
     }
-
-    .header__logo-accent:focus {
-        color: var(--color-inverted);
     }
-
+    
+   
     .header__logo-menu {
         color: var(--color-primary);
     }
@@ -38,15 +36,14 @@
         font-size: 26px;
         line-height: 1.19;
         text-decoration: none;
-    }
 
-    .header__logo-header:hover {
-        color: var(--color-white);
-        background-color: var(--color-white);
+            &:hover {
+                color: var(--color-white);
+                background-color: var(--color-white);
+            }
+            &:focus {
+                background-color: var(--color-white);
     }
-
-    .header__logo-header:focus {
-        background-color: var(--color-white);
     }
 
     .header__list-menu {
@@ -82,6 +79,11 @@
         padding-top: 32px;
         padding-bottom: 32px;
         transition: color 250ms var(--color-time);
+        
+        &:hover,
+        &:focus {
+        color: var(--color-inverted);
+            }
 
     }
 
@@ -96,14 +98,7 @@
         border-radius: 2px;
     }
 
-    .header__menu:hover {
-        color: var(--color-inverted);
-    }
-
-    .header__menu:focus {
-        color: var(--color-inverted);
-    }
-
+         
     .contact-list {
         display: flex;
         margin-left: auto;
@@ -118,16 +113,16 @@
         text-decoration: none;
         gap: 10px;
         transition: color 250ms var(--color-time);
+
+            &:hover,
+            &:focus {
+                color: var(--color-inverted);
+            }
     }
 
-    .mail:hover {
-        color: var(--color-inverted);
-    }
-
-    .mail:focus {
-        color: var(--color-inverted);
-    }
-
+      
+    
+      
     .tel {
         display: flex;
         align-items: center;
@@ -136,16 +131,15 @@
         text-decoration: none;
         gap: 10px;
         transition: color 250ms var(--color-time);
+
+            &:hover,
+            &:focus {
+                color: var(--color-inverted);
+            }
     }
 
-    .tel:hover {
-        color: var(--color-inverted);
-    }
-
-    .tel:focus {
-        color: var(--color-inverted);
-    }
-
+      
+    
     .contact-icon {
         fill: currentColor;
     }

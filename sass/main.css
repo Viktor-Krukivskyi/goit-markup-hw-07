@@ -117,12 +117,7 @@ ul {
 .header__logo-accent {
   color: var(--color-inverted);
 }
-
-.header__logo-accent:hover {
-  color: var(--color-inverted);
-}
-
-.header__logo-accent:focus {
+.header__logo-accent:hover, .header__logo-accent:focus {
   color: var(--color-inverted);
 }
 
@@ -146,12 +141,10 @@ ul {
   line-height: 1.19;
   text-decoration: none;
 }
-
 .header__logo-header:hover {
   color: var(--color-white);
   background-color: var(--color-white);
 }
-
 .header__logo-header:focus {
   background-color: var(--color-white);
 }
@@ -190,6 +183,9 @@ ul {
   padding-bottom: 32px;
   transition: color 250ms var(--color-time);
 }
+.header__menu:hover, .header__menu:focus {
+  color: var(--color-inverted);
+}
 
 .header__menu--current::after {
   position: absolute;
@@ -200,14 +196,6 @@ ul {
   background-color: var(--color-inverted);
   content: "";
   border-radius: 2px;
-}
-
-.header__menu:hover {
-  color: var(--color-inverted);
-}
-
-.header__menu:focus {
-  color: var(--color-inverted);
 }
 
 .contact-list {
@@ -225,12 +213,7 @@ ul {
   gap: 10px;
   transition: color 250ms var(--color-time);
 }
-
-.mail:hover {
-  color: var(--color-inverted);
-}
-
-.mail:focus {
+.mail:hover, .mail:focus {
   color: var(--color-inverted);
 }
 
@@ -243,12 +226,7 @@ ul {
   gap: 10px;
   transition: color 250ms var(--color-time);
 }
-
-.tel:hover {
-  color: var(--color-inverted);
-}
-
-.tel:focus {
+.tel:hover, .tel:focus {
   color: var(--color-inverted);
 }
 
@@ -365,6 +343,10 @@ ul {
   background-color: var(--color-background-box2);
 }
 
+.icon-adva {
+  fill: var(--color-inverted);
+}
+
 .main-title {
   font-family: "Roboto";
   font-weight: 700;
@@ -436,22 +418,37 @@ ul {
 
 .icon-team {
   fill: var(--color-icon);
+  transition: fill 250ms, background 250ms var(--color-time);
+}
+
+.icon-team:focus {
+  fill: var(--color-white);
+  transition: fill 250ms, background 250ms var(--color-time);
 }
 
 .icon-team:hover {
   fill: var(--color-white);
+  transition: fill 250ms, background 250ms var(--color-time);
 }
 
 .icon-link:hover {
   background-color: var(--color-inverted);
+  transition: fill 250ms, background 250ms var(--color-time);
 }
 
 .icon-link:hover .icon-team {
   fill: var(--color-white);
+  transition: fill 250ms, background 250ms var(--color-time);
+}
+
+.icon-link:focus .icon-team {
+  fill: var(--color-white);
+  transition: fill 250ms, background 250ms var(--color-time);
 }
 
 .icon-link:focus {
   background-color: var(--color-inverted);
+  transition: fill 250ms, background 250ms var(--color-time);
 }
 
 .section-title-team {
@@ -513,12 +510,12 @@ ul {
   fill: var(--color-icon);
 }
 
-.clients-team:hover {
+.clients-team:focus {
   fill: var(--color-inverted);
   transition: fill 250ms, background 250ms var(--color-time);
 }
 
-.clients-team:focus {
+.clients-team:hover {
   fill: var(--color-inverted);
   transition: fill 250ms, background 250ms var(--color-time);
 }
@@ -535,17 +532,22 @@ ul {
   transition: fill 250ms, background 250ms var(--color-time);
 }
 
+.clients-link:focus {
+  background-color: var(--color-inverted);
+}
+
 .clients-link:hover {
   border-color: var(--color-inverted);
   transition: fill 250ms, background 250ms var(--color-time);
 }
 
-.clients-link:focus {
-  background-color: var(--color-inverted);
-}
-
 .clients-link:hover .clients-team {
   fill: var(--color-inverted);
+  transition: fill 250ms, background 250ms var(--color-time);
+}
+
+.clients-link:focus .clients-team {
+  fill: var(--color-white);
   transition: fill 250ms, background 250ms var(--color-time);
 }
 
